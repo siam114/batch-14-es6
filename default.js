@@ -35,4 +35,26 @@ const numbers = [10, 20, 30, 40];
 
 const [first, second, third, fourth] = numbers;
 
-console.log(first, second, third, fourth);
+// console.log(first, second, third, fourth);
+
+
+
+const numbers1 = [10, 20, 30];
+const numbers2 = [40, 50, 60];
+
+const result = [
+    ...numbers1,
+    ...numbers2
+];
+
+// console.log(result);
+
+const fruits1 = ["Apple", "Banana"];
+const fruits2 = ["Mango", "Orange"];
+
+const allFruits = [
+    ...fruits1,
+    ...fruits2
+];
+
+// console.log(allFruits);
