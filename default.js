@@ -18,3 +18,21 @@ const introduce =(name, age) => {
 }
 
 // console.log(introduce('Siam', 25));
+
+
+const student = {
+    name: "Siam",
+    age: 22,
+    department: "CSE",
+    marks: 85
+};
+
+const { name, age, department, marks } = student;
+
+// console.log(name, age, department, marks);
+
+const numbers = [10, 20, 30, 40];
+
+const [first, second, third, fourth] = numbers;
+
+console.log(first, second, third, fourth);
