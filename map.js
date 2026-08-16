@@ -66,4 +66,20 @@ const newStudent2= students2.map((student)=>{
     }
 })
 
-console.log(newStudent2);
+// console.log(newStudent2);
+
+const products5 = [
+    { name: "T-Shirt", price: 500 },
+    { name: "Shirt", price: 800 },
+    { name: "Pant", price: 1200 },
+    { name: "Jacket", price: 2000 }
+];
+
+const discountPrice = products5.map((product)=>{
+  return {
+        ...product,
+        price: product.price - (product.price * 10 / 100)
+    };
+})
+
+console.log(discountPrice);
