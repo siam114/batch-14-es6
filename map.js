@@ -108,3 +108,19 @@ const studentStatus = students5.map((students)=>{
 
 
 // console.log(studentStatus);
+
+const users = [
+    { firstName: "SM", lastName: "Siam" },
+    { firstName: "Md", lastName: "Rahim" },
+    { firstName: "Abdul", lastName: "Karim" }
+];
+
+const fullNames = users.map((user)=>{
+    return {
+        ...user,
+        fullName: `${user.firstName} ${user.lastName}`
+    }
+})
+
+
+console.log(fullNames);
