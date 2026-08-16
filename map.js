@@ -192,4 +192,33 @@ const gradeOfStudent = students6.map((student)=>{
     }
 })
 
-console.log(gradeOfStudent);
+// console.log(gradeOfStudent);
+
+
+const products8 = [
+    {
+        name: "T-Shirt",
+        price: 500,
+        quantity: 3
+    },
+    {
+        name: "Shoes",
+        price: 2000,
+        quantity: 2
+    },
+    {
+        name: "Watch",
+        price: 1500,
+        quantity: 4
+    }
+];
+
+
+const newProductsTotal= products8.map((product)=>{
+    return {
+        ...product,
+        total: product.price* product.quantity
+    }
+})
+
+console.log(newProductsTotal);
