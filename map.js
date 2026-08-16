@@ -16,4 +16,13 @@ const squareNumbers = numbers.map((number)=>{
     return number * number;
 })
 
-console.log(squareNumbers);
+// console.log(squareNumbers);
+
+
+const names2 = ["siam", "rahim", "karim", "hasan"];
+
+const upperCaseNames = names2.map((name)=>{
+    return name.toUpperCase();
+})
+
+// console.log(upperCaseNames);
