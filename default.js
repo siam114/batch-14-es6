@@ -72,4 +72,53 @@ const newObject = {
     marks: 85
 };
 
-console.log(newObject);
+// console.log(newObject);
+
+
+function sumNumbers(...numbers) {
+    let total = 0;
+
+    for (let number of numbers) {
+        total = total + number;
+    }
+
+    return total;
+}
+
+// console.log(sumNumbers(10, 20, 30));
+
+function findMax(...numbers) {
+    let max = numbers[0];
+
+    for (let number of numbers) {
+        if (number > max) {
+            max = number;
+        }
+    }
+
+    return max;
+}
+
+// console.log(findMax(10, 50, 20, 80, 30));
+
+
+function countNumbers(...numbers) {
+    return numbers.length;
+}
+
+// console.log(countNumbers(10, 20, 30, 40));
+
+
+function getEvenNumbers(...numbers) {
+    let evenNumbers = [];
+
+    for (let number of numbers) {
+        if (number % 2 === 0) {
+            evenNumbers.push(number);
+        }
+    }
+
+    return evenNumbers;
+}
+
+console.log(getEvenNumbers(10, 15, 20, 25, 30));
