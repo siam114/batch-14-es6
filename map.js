@@ -82,4 +82,29 @@ const discountPrice = products5.map((product)=>{
     };
 })
 
-console.log(discountPrice);
+// console.log(discountPrice);
+
+const students5 = [
+    { name: "Siam", marks: 85 },
+    { name: "Rahim", marks: 55 },
+    { name: "Karim", marks: 92 },
+    { name: "Hasan", marks: 38 }
+];
+
+const studentStatus = students5.map((students)=>{
+  if (students.marks >= 40) {
+        return {
+            ...students,
+            status: "Pass"
+        };
+    } else {
+        return {
+            ...students,
+            status: "Fail"
+        };
+    }
+
+})
+
+
+// console.log(studentStatus);
