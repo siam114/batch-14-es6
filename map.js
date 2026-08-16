@@ -51,4 +51,19 @@ const newProducts = products2.map((product)=>{
     return product;
 })
 
-console.log(newProducts);
+// console.log(newProducts);
+
+
+const students2 = [
+    { name: "Siam", marks: 85 },
+    { name: "Rahim", marks: 70 },
+    { name: "Karim", marks: 90 }
+];
+
+const newStudent2= students2.map((student)=>{
+    return{
+        ...student,grade: "A"
+    }
+})
+
+console.log(newStudent2);
