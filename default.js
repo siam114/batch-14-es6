@@ -126,5 +126,14 @@ function getEvenNumbers(...numbers) {
 const fruits = ["Apple", "Banana", "Mango"];
 
 fruits.forEach((fruit, index) => {
-    console.log(index, fruit);
+    // console.log(index, fruit);
 });
+
+
+const numbers4 = [10, 20, 30];
+
+const result2 = numbers4.map((number) => {
+    return number * 2;
+});
+
+console.log(result2);
