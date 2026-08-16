@@ -58,3 +58,18 @@ const allFruits = [
 ];
 
 // console.log(allFruits);
+
+
+const student2 = {
+    name: "Siam",
+    age: 22
+};
+
+
+const newObject = {
+    ...student2,
+   department: "CSE",
+    marks: 85
+};
+
+console.log(newObject);
