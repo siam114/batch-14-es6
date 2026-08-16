@@ -146,4 +146,50 @@ const productsWithTax = products4.map((product) => {
 
 });
 
-console.log(productsWithTax);
+// console.log(productsWithTax);
+
+
+const students6 = [
+    { name: "Siam", marks: 95 },
+    { name: "Rahim", marks: 82 },
+    { name: "Karim", marks: 73 },
+    { name: "Hasan", marks: 61 },
+    { name: "Rakib", marks: 45 },
+    { name: "Jamal", marks: 30 }
+];
+
+const gradeOfStudent = students6.map((student)=>{
+    if(student.marks >= 85){
+        return{
+            ...student,
+            grade: "A+"
+        }
+    }else if(student.marks >= 80){
+        return{
+            ...student,
+            grade: "A"
+        }
+    }else if(student.marks>= 70){
+        return{
+            ...student,
+            grade: "B"
+        }
+    }else if(student.marks >= 60){
+        return{
+            ...student,
+            grade: "C"
+        }
+    }else if(student.marks >= 40){
+        return{
+            ...student,
+            grade: "D"
+        }
+    }else{
+        return{
+            ...student,
+            grade: "F"
+        }
+    }
+})
+
+console.log(gradeOfStudent);
