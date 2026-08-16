@@ -121,4 +121,10 @@ function getEvenNumbers(...numbers) {
     return evenNumbers;
 }
 
-console.log(getEvenNumbers(10, 15, 20, 25, 30));
+// console.log(getEvenNumbers(10, 15, 20, 25, 30));
+
+const fruits = ["Apple", "Banana", "Mango"];
+
+fruits.forEach((fruit, index) => {
+    console.log(index, fruit);
+});
