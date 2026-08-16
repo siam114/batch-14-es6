@@ -9,7 +9,7 @@ const student = students.find((student) => {
     return student.marks >= 80;
 });
 
-console.log(student);
+// console.log(student);
 
 const users = [
     { name: "Siam", age: 22, active: false },
@@ -22,4 +22,13 @@ const userFind = users.find((user)=>{
     return user.age >=18 && user.active
 })
 
-console.log(userFind);
+// console.log(userFind);
+
+
+const numbers = [10, 20, 30, 40, 50];
+
+const result = numbers.findIndex((number) => {
+    return number > 25;
+});
+
+console.log(result);
