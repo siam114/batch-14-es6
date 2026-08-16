@@ -123,4 +123,27 @@ const fullNames = users.map((user)=>{
 })
 
 
-console.log(fullNames);
+// console.log(fullNames);
+
+
+const products4 = [
+    { name: "Laptop", price: 50000 },
+    { name: "Phone", price: 30000 },
+    { name: "Tablet", price: 20000 }
+];
+
+const productsWithTax = products4.map((product) => {
+
+    const tax = product.price * 15 / 100;
+    const totalPrice = product.price + tax;
+
+    return {
+    ...product,
+    tax: tax,
+    totalPrice: totalPrice
+};
+   
+
+});
+
+console.log(productsWithTax);
