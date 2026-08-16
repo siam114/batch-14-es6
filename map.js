@@ -26,3 +26,17 @@ const upperCaseNames = names2.map((name)=>{
 })
 
 // console.log(upperCaseNames);
+
+
+const products = [
+    { name: "T-Shirt", price: 500 },
+    { name: "Shirt", price: 800 },
+    { name: "Pant", price: 1200 }
+];
+
+const productPrices = products.map((product)=>{
+    return product.price;
+})
+
+// console.log(productPrices);
+
