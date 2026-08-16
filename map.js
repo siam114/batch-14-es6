@@ -40,3 +40,15 @@ const productPrices = products.map((product)=>{
 
 // console.log(productPrices);
 
+const products2 = [
+    { name: "T-Shirt", price: 500 },
+    { name: "Shirt", price: 800 },
+    { name: "Pant", price: 1200 }
+];
+
+const newProducts = products2.map((product)=>{
+    product.price = product.price + 100;
+    return product;
+})
+
+console.log(newProducts);
