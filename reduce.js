@@ -53,4 +53,18 @@ const highestMarks = students2.reduce((acc, student) => {
     }
 }, students[0]);
 
-console.log(highestMarks);
+// console.log(highestMarks);
+
+const students5 = [
+    { name: "Siam", marks: 85 },
+    { name: "Rahim", marks: 92 },
+    { name: "Karim", marks: 78 },
+    { name: "Hasan", marks: 95 },
+    { name: "Rakib", marks: 88 }
+];
+
+const highestMark = students5.reduce((acc, curr) => {
+    return curr.marks > acc.marks ? curr : acc;
+}, students5[0]);
+
+console.log(highestMark);
