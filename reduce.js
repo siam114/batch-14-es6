@@ -67,4 +67,25 @@ const highestMark = students5.reduce((acc, curr) => {
     return curr.marks > acc.marks ? curr : acc;
 }, students5[0]);
 
-console.log(highestMark);
+// console.log(highestMark);
+
+
+const employees = [
+    { name: "Siam", salary: 30000 },
+    { name: "Rahim", salary: 25000 },
+    { name: "Karim", salary: 40000 },
+    { name: "Hasan", salary: 35000 }
+];
+
+const totalAmount = employees.reduce((acc,curr)=>{
+    return acc + curr.salary
+},0)
+
+console.log(totalAmount);
+
+
+const lowAmount = employees.reduce((acc, curr)=>{
+    return curr.salary < acc.salary ? curr : acc;
+},employees[0])
+
+console.log(lowAmount);
