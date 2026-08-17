@@ -81,7 +81,7 @@ const totalAmount = employees.reduce((acc,curr)=>{
     return acc + curr.salary
 },0)
 
-console.log(totalAmount);
+// console.log(totalAmount);
 
 
 const lowAmount = employees.reduce((acc, curr)=>{
@@ -131,4 +131,27 @@ const grade = students6.reduce((acc, curr) => {
     return acc;
 }, {});
 
-console.log(grade);
+// console.log(grade);
+
+
+const products7 = [
+    { name: "T-Shirt", category: "Clothing", price: 500 },
+    { name: "Jeans", category: "Clothing", price: 1200 },
+    { name: "Laptop", category: "Electronics", price: 50000 },
+    { name: "Phone", category: "Electronics", price: 30000 },
+    { name: "Watch", category: "Accessories", price: 1500 },
+    { name: "Bag", category: "Accessories", price: 2000 }
+];
+
+
+const totalPrices = products7.reduce((acc,curr)=>{
+    if(acc[curr.category]){
+        acc[curr.category]+= curr.price
+    }else{
+        acc[curr.category] = curr.price
+    }
+
+    return acc
+},{})
+
+console.log(totalPrices);
