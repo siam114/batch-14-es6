@@ -108,4 +108,27 @@ const departmentSalary = employees2.reduce((acc, curr) => {
     return acc;
 }, {});
 
-console.log(departmentSalary);
+// console.log(departmentSalary);
+
+
+const students6 = [
+    { name: "Siam", grade: "A+" },
+    { name: "Rahim", grade: "A" },
+    { name: "Karim", grade: "A+" },
+    { name: "Hasan", grade: "B" },
+    { name: "Rakib", grade: "A" },
+    { name: "Jamal", grade: "B" },
+    { name: "Sakib", grade: "A+" }
+];
+
+const grade = students6.reduce((acc, curr) => {
+    if (acc[curr.grade]) {
+        acc[curr.grade] += 1;
+    } else {
+        acc[curr.grade] = 1;
+    }
+
+    return acc;
+}, {});
+
+console.log(grade);
