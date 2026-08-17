@@ -88,4 +88,24 @@ const lowAmount = employees.reduce((acc, curr)=>{
     return curr.salary < acc.salary ? curr : acc;
 },employees[0])
 
-console.log(lowAmount);
+// console.log(lowAmount);
+
+const employees2 = [
+    { name: "Siam", department: "IT", salary: 30000 },
+    { name: "Rahim", department: "HR", salary: 25000 },
+    { name: "Karim", department: "IT", salary: 40000 },
+    { name: "Hasan", department: "HR", salary: 35000 },
+    { name: "Rakib", department: "Sales", salary: 28000 }
+];
+
+const departmentSalary = employees2.reduce((acc, curr) => {
+    if (acc[curr.department]) {
+        acc[curr.department] += curr.salary;
+    } else {
+        acc[curr.department] = curr.salary;
+    }
+
+    return acc;
+}, {});
+
+console.log(departmentSalary);
