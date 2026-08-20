@@ -154,4 +154,4 @@ const totalPrices = products7.reduce((acc,curr)=>{
     return acc
 },{})
 
-console.log(totalPrices);
+// console.log(totalPrices);
