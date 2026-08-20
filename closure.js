@@ -12,8 +12,10 @@ const createLifeCounter = () =>{
 const siamLifeUpdate = createLifeCounter();
 const korimLifeUpdate = createLifeCounter()
 
-console.log(siamLifeUpdate());
-console.log(siamLifeUpdate());
-console.log(siamLifeUpdate());
+// console.log(siamLifeUpdate());
+// console.log(siamLifeUpdate());
+// console.log(siamLifeUpdate());
 
-console.log(korimLifeUpdate());
+// console.log(korimLifeUpdate());
+
+
